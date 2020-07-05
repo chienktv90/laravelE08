@@ -49,7 +49,7 @@ font-size: 0.8rem;
 </style>
 <body>
 <?php
-      $conn = mysqli_connect('localhost', 'root', '', 'sn') or die ('Không thể kết nối đến CSDL');
+      $conn = mysqli_connect('localhost', 'root', '', 'sinhnhat') or die ('Không thể kết nối đến CSDL');
 	   mysqli_set_charset($conn, 'utf8');
 	
       $g_date  = date("d");

@@ -54,7 +54,7 @@ tr:hover{background-color:#f5f5f5}
       $sl_dong_tren_trang = 10;
       $tranghientai       = 1;
       
-      $con = mysqli_connect('localhost', 'root', '', 'sn') or die('Không thể kết nối đến CSDL');
+      $con = mysqli_connect('localhost', 'root', '', 'sinhnhat') or die('Không thể kết nối đến CSDL');
       mysqli_set_charset($con, 'utf8');
       
       if (isset($_POST['Submit']) && !isset($_GET['action']))
@@ -121,7 +121,7 @@ Date:
 <a href="comSinhNhat.php"><input type="button" name="btnhuy" id="btnhuy" value="Cancel"/></a>
 <hr>
 <?php 
-//echo ceil(3/2);
+echo ceil(3/2);
 ?>
 </br><div align="right">N.o Page
   <?php

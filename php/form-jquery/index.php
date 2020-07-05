@@ -135,9 +135,9 @@
             },
             messages: {
 
-                name: {
-                    required: "Please enter name",
-                },
+                // name: {
+                //     required: "Vui lòng nhập tên!",
+                // },
                 message: {
                     required: "Please enter message",
                 },
