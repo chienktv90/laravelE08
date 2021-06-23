@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		//alert("demo");
+		//var username = document.forms["frmNhapLieu"]["txtUsername"].value;
+		//var password = document.getElementById("txtPassword").value;
+		//alert($('#txtUsername').val());
+		//alert($('.frmDemo').html());
+
+		
+
+		function DangNhap() {
+			var username = $('#txtUsername').val();
+			var password = $('#txtPassword').val();
+			if (username == "admin" && password == "admin") {
+				alert("Bạn đăng nhập thành công!");
+			}
+			else {
+				alert("Bạn đăng nhập thất bại");
+			}
+		}
+
+		$('#btnLogin').click(function()
+		{
+			DangNhap();
+		});
+
+  
+
+	});
+
+
+
+		// function DangNhap() {
+		// 	//var contact_email = document.forms["contact-form"]["email"].value;
+		// 	//alert(contact_email);
+		// 	var username = document.forms["frmNhapLieu"]["txtUsername"].value;
+		// 	var password = document.getElementById("txtPassword").value;
+		// 	if (username == "admin" && password == "admin") {
+		// 		alert("Bạn đăng nhập thành công!");
+		// 	}
+		// 	else {
+		// 		alert("Bạn đăng nhập thất bại");
+		// 	}
+		// }
+
+		// function Lap() {
+
+		// 	for (var i = 0; i < 10; i++) {
+		// 		console.log(i);
+		// 		//document.write(i);
+
+		// 		//document.getElementById("demoAppend").innerHTML('fasfas');
+
+		// 		document.getElementById('demoAppend').innerHTML += '<br>';
+		// 	}
+		// }
+
+		// function Lap() {
+		// 	var strChuoi = '';
+		// 	for (var i = 0; i < 10; i++) {
+		// 		console.log(i);
+		// 		//document.write(i);
+		// 		strChuoi+="<b>Appended "+i+"</b><br>";
+		// 		document.getElementById("demoAppend").innerHTML(i);
+				
+		// 	}
+		// 	//alert(navigator.appVersion);
+		// 	//document.getElementById("demoAppend").innerHTML(strChuoi.toString());
+		// }
+	
+
+
+		
+	</script>
+</head>
+
+<body>
+	<div class="frmDemo">
+		<p>html</p><br>
+		in Can Tho
+	
+	</div>
+	<div id="demoAppend"></div>
+	<!-- <form name="contact-form">
+			Email: <input type="text" name="email" />
+			<input type="submit" value="Đăng nhập"
+						onclick="DangNhap()" />
+		</form> -->
+
+		<!-- <script type="text/javascript">
+			for (var i = 0; i < 10; i++) {
+				document.write(i.toString()+"</br>");
+			}
+		</script> -->
+
+	<form name="frmNhapLieu" id="frmNhapLieu" method="post" action="">
+		<table class="TableForm" width="100%" border="1" cellpadding="0" cellspacing="5">
+			<tr>
+				<td class="Left" width="35%">Tên đăng nhập:</td>
+				<td class="Right">
+					<input name="txtUsername" type="text" required="required" id="txtUsername"
+						placeholder="Tên đăng nhập" value="admin"/>
+					<label id="lblRequired">*</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="Left">Mật khẩu:</td>
+				<td class="Right">
+					<input name="txtPassword" type="password" required="required" id="txtPassword"
+						placeholder="Mật khẩu" />
+					<label id="lblRequired">*</label>
+				</td>
+			</tr>
+
+			<tr>
+				<td class="Left">
+					</br>
+				</td>
+				<td class="Right">
+					<input class="Button" name="btnLogin" id="btnLogin" type="submit" value="Đăng nhập"
+						onclick="DangNhap()" />
+					<input type="checkbox" name="chkRemember" id="chkRemember" value="1" />Ghi nhớ đăng nhập
+				</td>
+			</tr>
+
+			<tr>
+				<td colspan="2" align="center">
+					<a href="#">Quên mật khẩu?</a>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>
