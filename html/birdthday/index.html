@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="">
+
+<style>
+    @font-face {
+        font-family: MYFONT;
+        src: url(font/MYRIADPRO-COND.woff);
+    }
+
+    body {
+        /* font-family: 'Cambria', Helvetica, Verdana;*/
+        font-family: MYFONT; 
+    }
+
+
+
+    .mySlides {
+        background-image: url("banner_sinhnhat.png");
+        height: 102px;
+        width: 847px;
+        text-align: center;
+        /*color: #0082C6;*/
+        color: blue;
+        /*hong*/
+        border: 1px solid black;
+        box-shadow: 5px 10px #888888;
+		margin: 0 auto;
+    }
+
+    #slide1{
+        color: red;
+    }
+
+    .mySlides_area {
+        width: 310px;
+        height: 60px;
+        padding-top: 35px;
+        padding-left: 295px;
+    }
+
+    .mySlides_name {
+        /*font-size: 1rem;*/
+        font-size: 1.2rem;
+        /*font-weight: 700;*/
+    }
+
+    .mySlides_date {
+        font-size: 0.8rem;
+        /*
+    float: right;
+    padding-top:40px;
+    */
+    }
+</style>
+</head>
+
+<body>
+    <div id="demo"></div>
+
+    <script>
+
+    var cars = ["Trần phú", "Nguyễn Thịnh", "Phan Nghi"];
+    
+    // cars.push("giatri1");
+    // cars.push("giatri2");
+    // cars.push("giatri3");
+    //document.getElementById("demo").innerHTML = cars[2];
+    for (let index = 0; index < cars.length; index++) {
+        //const element = array[index];
+        console.log(cars[index]);
+        
+    }
+    </script>
+
+
+    <div class="mySlides" id="slide1" style="color:seagreen;">
+        <div class="mySlides_area">
+            <span class="mySlides_date">01-02-2015</span></br>
+            <span class="mySlides_name">VIET NAM SEAPRODUCTS - JOINT STOCK CORPORATION</span>
+        </div>
+    </div>
+    <div class="mySlides">
+        <div class="mySlides_area"><span class="mySlides_date">01-02-1998</span></br><span class="mySlides_name">BUREAU
+                VERITAS VIET NAM</span></div>
+    </div>
+    <div class="mySlides">
+        <div class="mySlides_area"><span class="mySlides_date">01-02-1996</span></br><span class="mySlides_name">AN
+                GIANG AGRICULTURE AND FOODS IMPORT - EXPORT COMPANY</span></div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > x.length) { slideIndex = 1 }
+            x[slideIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+    </script>
+
+</body>
+
+</html>
