@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>My page title</title>
+<!-- This is a basic HTML template with a CSS layout -->
+<style>
+body {
+ font-family: Verdana, Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ color:#333
+}
+ 
+p {
+ padding: 10px;
+}
+ 
+#wrapper {
+ margin: 0 auto;
+ width: 1000px;
+}
+ 
+#header {
+ float: left;
+ height: 75px;
+ width: 1000px;
+ background: #6352FF;
+}
+ 
+#menu {
+ float: left;
+ height: 40px;
+ width: 1000px;
+ background: #96C7FF;
+}
+ 
+#content {
+ float: left;
+ background: #FFFFFF;
+ width: 850px;
+}
+ 
+#leftcolumn {
+ background: #C9D8FF;
+ width: 150px;
+ float: left;
+}
+ 
+#footer {
+ height: 40px;
+ width: 1000px;
+ background: #6352FF;
+ clear: both;
+}
+ 
+ul#menutabs {
+list-style: none;
+margin: 0;
+padding: 8px 0;
+border-bottom: 1px solid #CCC;
+font-weight: bold;
+text-align: center;
+white-space: nowrap
+}
+ul#menutabs li {
+display: inline;
+margin: 0 3px;
+}
+ul#menutabs a {
+text-decoration: none;
+padding: 0 0 3px;
+border-bottom: 2px solid #FFF;
+color: #8D9091;
+ }
+ul#menutabs a#current {
+border-color: #0024B5;
+color:#0029CC
+}
+ul#menutabs a:hover {
+border-color: #0024B5;
+color: #666
+}
+ 
+ 
+</style>
+</head>
+<body>
+ <div id="wrapper">
+ <div id="header">
+ <h1>This is the Header</h1>
+ </div>
+ <div id="menu">
+ <ul id="menutabs">
+ <li><a id="current" href="#">Home</a></li>
+ <li><a href="link1.html">Link 1</a></li>
+ <li><a href="link2.html">Link 2</a></li>
+ <li><a href="link3.html">Link 3</a></li>
+ <li><a href="link4.html">Link 4</a></li>
+</ul>
+ </div>
+ <div id="leftcolumn">
+ <p>The sidebar content goes here.</p>
+ <p>The sidebar content goes here.</p>
+ <p>The sidebar content goes here.</p>
+ <p>The sidebar content goes here.</p>
+ <p>The sidebar content goes here.</p>
+ </div>
+ <div id="content">
+ <p>The main content goes here.</p>
+ <p>The main content goes here.</p>
+ <p>The main content goes here.</p>
+ <p>The main content goes here.</p>
+ </div>
+ <div id="footer">
+ <p>This is the Footer</p>
+ </div>
+ </div>
+</body>
+</html>
